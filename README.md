@@ -193,7 +193,21 @@ En utilisant la ligne de commande nous allons compiler, tester et packager l'app
 * Quelle est la commande à lancer ?
 * Quel sont les fichiers / répertoires générés par cette commande ?
 
-`Vos reponces ICI; n'oubliez pas de commiter au fil de l'eau`
+**RÉPONSE:**
+
+**Commande à lancer :** `./mvnw package`
+**Fichiers / répertoires générés : target/**
+*   **classes/** – classes compilées
+*   **generated-sources/** – sources générées
+*   **generated-test-sources/** – sources de test générées
+*   **maven-archiver/** – métadonnées du build Maven
+*   **maven-status/** – statut de compilation
+*   **surefire-reports/** – rapports des tests
+*   **test-classes/** – classes de test compilées
+*   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar** – fichier JAR exécutable
+*   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.original** – fichier original du build
+
+
       
     
 ### 2.3 Reportez le code du TP2           
