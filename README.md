@@ -145,7 +145,8 @@ Maven lit ton pom.xml et récupère toutes les librairies déclarées dans **<de
     * Quel fichier de configuration est modifié ? 
 
 **RÉPONSE:**
-    le fichier **application.properties**
+
+le fichier **application.properties**
 
 #### 2.2.3 Gestion du cycle de vie
 
@@ -165,7 +166,28 @@ En utilisant la ligne de commande nous allons compiler, tester et packager l'app
 * Quelle est la commande à lancer pour compiler & éxécuter les tests ?
 * Quel sont les fichiers / répertoires générés par cette commande ?
 
-`Vos reponces ICI; n'oubliez pas de commiter au fil de l'eau`
+**RÉPONSE:**
+
+* Commande pour compiler l'application :
+    * sous linux
+        ```bash
+        ./mvnw compile
+        ```
+    * sous windows
+        il suffit de remplacer `./mvnw` par `mvnw.cmd`.
+
+* Commande pour compiler & éxécuter les tests :
+    ```bash
+    ./mvnw test
+    ```
+* les fichiers / répertoires générés sont
+    * **classes/**
+    * **generated-sources/**
+    * **generated-test-sources/**
+    * **maven-status/**
+    * **surefire-reports/**
+    * **test-classes/**
+
     
 ##### 2.2.3.2 Packaging
 * Quelle est la commande à lancer ?
