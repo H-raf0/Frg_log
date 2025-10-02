@@ -144,7 +144,8 @@ Maven lit ton pom.xml et récupère toutes les librairies déclarées dans **<de
     * Un fois le niveau de trace par defaut changé vous devriez voir le résultat de votre commande.
     * Quel fichier de configuration est modifié ? 
 
-`Vos reponces ICI; n'oubliez pas de commiter au fil de l'eau`   
+**RÉPONSE:**
+    le fichier **application.properties**
 
 #### 2.2.3 Gestion du cycle de vie
 
