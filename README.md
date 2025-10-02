@@ -49,8 +49,8 @@ Notamment un framework de test **JUnit** et un framework de logging **Logback**
     * .gitignore
     * décrire l'arborescence de répertoire
             
-**REPONSE:** 
-    * **pom.xml** : nous permet d'ajouter les dépondence dont on a besion 
+* **REPONSE:** 
+    * **pom.xml** : nous permet d'ajouter les dépondence dont on a besion.
     * **.gitignore** : sert à indiquer à Git quels fichiers ou dossiers il doit ignorer dans le dépôt.
     * **src/main/java** : contient le code source Java de l’application.
     * **src/main/resources** : contient les fichiers de configuration et ressources qui seront inclus dans le classpath.
