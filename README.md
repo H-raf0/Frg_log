@@ -133,7 +133,9 @@ Pour illustrer la gestion des dépendances automatiques vous ajouterez une dépe
     * copiez la déclaration et collez là dans votre *pom.xml*
     * Décrivrez rapidement le fonctionnement de la résolution de dépendance
  
-`Vos reponces ICI; n'oubliez pas de commiter au fil de l'eau`
+**REPONSE**
+
+Maven lit ton pom.xml et récupère toutes les librairies déclarées dans **<dependencies>** depuis un repository central.
 
 * Utilisez la classe utilitaire `StringUtils` et sa méthode `reverse` pour afficher dans la log au niveau *debug* vos noms à la suite du Hello Word.
     * La ligne de log n'apparait pas dans la console car le niveau de trace par defaut est `WARN`.
