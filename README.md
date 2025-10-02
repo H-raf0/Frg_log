@@ -73,7 +73,56 @@ public static void main(String[] args) {
 
 * Exécutez votre programme
 
-`Mettre ici le résultat de l'éxécution; n'oubliez pas de commiter au fil de l'eau`
+```
+C:\Users\Achraf\Desktop\School\frg_log>mvnw.cmd spring-boot:run
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -----------------< isima.F2:TP3.ABDELLAOUI_EL-ALLALI >------------------
+[INFO] Building TP3.ABDELLAOUI_EL-ALLALI 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot:3.5.6:run (default-cli) > test-compile @ TP3.ABDELLAOUI_EL-ALLALI >>>
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.14.0:compile (default-compile) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] skip non existing resourceDirectory C:\Users\Achraf\Desktop\School\frg_log\src\test\resources
+[INFO]
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] <<< spring-boot:3.5.6:run (default-cli) < test-compile @ TP3.ABDELLAOUI_EL-ALLALI <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot:3.5.6:run (default-cli) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-02T19:08:32.818+02:00  INFO 16140 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.ABDELLAOUI_EL_ALLALI.Application   : Starting Application using Java 17.0.14 with PID 16140 (C:\Users\Achraf\Desktop\School\frg_log\target\classes started by Achraf in C:\Users\Achraf\Desktop\School\frg_log)
+2025-10-02T19:08:32.833+02:00  INFO 16140 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.ABDELLAOUI_EL_ALLALI.Application   : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T19:08:33.489+02:00  INFO 16140 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.ABDELLAOUI_EL_ALLALI.Application   : Started Application in 1.39 seconds (process running for 1.868)
+2025-10-02T19:08:33.489+02:00  WARN 16140 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.ABDELLAOUI_EL_ALLALI.Application   : Hello Word
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.861 s
+[INFO] Finished at: 2025-10-02T19:08:33+02:00
+[INFO] ------------------------------------------------------------------------
+```
 
 Vous remarquerez qu'il n'est pas nécessaire d'ajouter la dépendance vers un logger (ici *logback*). C'est une dépendance classique d'un projet java. Elle est déjà présente dans le pom de *spring boot*.
 
