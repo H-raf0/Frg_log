@@ -49,7 +49,7 @@ Notamment un framework de test **JUnit** et un framework de logging **Logback**
     * .gitignore
     * décrire l'arborescence de répertoire
             
-* **REPONSE:** 
+* **RÉPONSE:** 
     * **pom.xml** : nous permet d'ajouter les dépondence dont on a besion.
     * **.gitignore** : sert à indiquer à Git quels fichiers ou dossiers il doit ignorer dans le dépôt.
     * **src/main/java** : contient le code source Java de l’application.
@@ -73,6 +73,7 @@ public static void main(String[] args) {
 
 * Exécutez votre programme
 
+**RÉPONSE:**
 ```
 C:\Users\Achraf\Desktop\School\frg_log>mvnw.cmd spring-boot:run
 [INFO] Scanning for projects...
@@ -133,7 +134,7 @@ Pour illustrer la gestion des dépendances automatiques vous ajouterez une dépe
     * copiez la déclaration et collez là dans votre *pom.xml*
     * Décrivrez rapidement le fonctionnement de la résolution de dépendance
  
-**REPONSE**
+**RÉPONSE:**
 
 Maven lit ton pom.xml et récupère toutes les librairies déclarées dans **<dependencies>** depuis un repository central.
 
