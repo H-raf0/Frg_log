@@ -304,7 +304,9 @@ On utilisera un template maven pour initialiser le descriptif des actions à ré
 * Le yml par defaut devrait faire echouer votre pipeline.
 * Quelles est l'erreur ?
 
-`Vos réponces ici`   
+**RÉPONSE:**
+
+    deploy:jdk8  
 
 * Le script template proposé par defaut est relativement complexe.
 * Pour la suite nous utiliserons le template suivant : 
