@@ -206,8 +206,6 @@ En utilisant la ligne de commande nous allons compiler, tester et packager l'app
 *   **test-classes/** – classes de test compilées
 *   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar** – fichier JAR exécutable
 *   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.original** – fichier original du build
-
-
       
     
 ### 2.3 Reportez le code du TP2           
@@ -215,8 +213,79 @@ En utilisant la ligne de commande nous allons compiler, tester et packager l'app
     * Votre implémentation dans le repertoire src/main/java/*pakcage_name*/*Application
     * Votre classe de test dans le repertoire src/test/java/*pakcage_name*/*ApplicationTests
 * Effectuez le packaging de votre application pour lancer la compilation et les tests.
- 
-`Inserez ici le résultat de l'éxécution de votre commande maven`   
+
+**RÉPONSE:**
+
+```
+C:\Users\Achraf\Desktop\School\frg_log>mvnw.cmd clean package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -----------------< isima.F2:TP3.ABDELLAOUI_EL-ALLALI >------------------
+[INFO] Building TP3.ABDELLAOUI_EL-ALLALI 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.4.1:clean (default-clean) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Deleting C:\Users\Achraf\Desktop\School\frg_log\target
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.14.0:compile (default-compile) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\classes
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] skip non existing resourceDirectory C:\Users\Achraf\Desktop\School\frg_log\src\test\resources
+[INFO]
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO]
+[INFO] --- surefire:3.5.4:test (default-test) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running isima.F2.TP3.ABDELLAOUI_EL_ALLALI.ApplicationTests
+14:07:13.307 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [isima.F2.TP3.ABDELLAOUI_EL_ALLALI.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:07:13.475 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration isima.F2.TP3.ABDELLAOUI_EL_ALLALI.Application for test class isima.F2.TP3.ABDELLAOUI_EL_ALLALI.ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-03T14:07:14.827+02:00  INFO 4704 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.A.ApplicationTests                 : Starting ApplicationTests using Java 17.0.14 with PID 4704 (started by Achraf in C:\Users\Achraf\Desktop\School\frg_log)
+2025-10-03T14:07:14.827+02:00  INFO 4704 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.A.ApplicationTests                 : No active profile set, falling back to 1 default profile: "default"
+2025-10-03T14:07:15.992+02:00  INFO 4704 --- [TP3.ABDELLAOUI_EL-ALLALI] [           main] i.F.T.A.ApplicationTests                 : Started ApplicationTests in 1.996 seconds (process running for 4.374)
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.884 s -- in isima.F2.TP3.ABDELLAOUI_EL_ALLALI.ApplicationTests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.4.2:jar (default-jar) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Building jar: C:\Users\Achraf\Desktop\School\frg_log\target\TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot:3.5.6:repackage (repackage) @ TP3.ABDELLAOUI_EL-ALLALI ---
+[INFO] Replacing main artifact C:\Users\Achraf\Desktop\School\frg_log\target\TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Achraf\Desktop\School\frg_log\target\TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.259 s
+[INFO] Finished at: 2025-10-03T14:07:20+02:00
+[INFO] ------------------------------------------------------------------------
+```
 
 ## 3 Intégration continue
 
