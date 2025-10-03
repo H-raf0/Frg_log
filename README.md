@@ -195,17 +195,17 @@ En utilisant la ligne de commande nous allons compiler, tester et packager l'app
 
 **RÉPONSE:**
 
-**Commande à lancer :** `./mvnw package`
-**Fichiers / répertoires générés : target/**
-*   **classes/** – classes compilées
-*   **generated-sources/** – sources générées
-*   **generated-test-sources/** – sources de test générées
-*   **maven-archiver/** – métadonnées du build Maven
-*   **maven-status/** – statut de compilation
-*   **surefire-reports/** – rapports des tests
-*   **test-classes/** – classes de test compilées
-*   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar** – fichier JAR exécutable
-*   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.original** – fichier original du build
+* **Commande à lancer :** `./mvnw package`
+* **Fichiers / répertoires générés : target/**
+    *   **classes/** – classes compilées
+    *   **generated-sources/** – sources générées
+    *   **generated-test-sources/** – sources de test générées
+    *   **maven-archiver/** – métadonnées du build Maven
+    *   **maven-status/** – statut de compilation
+    *   **surefire-reports/** – rapports des tests
+    *   **test-classes/** – classes de test compilées
+    *   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.jar** – fichier JAR exécutable
+    *   **TP3.ABDELLAOUI_EL-ALLALI-0.0.1-SNAPSHOT.original** – fichier original du build
       
     
 ### 2.3 Reportez le code du TP2           
@@ -351,8 +351,22 @@ validation:
 
 * Completez le `.gitlab-ci.yml` pour inclure un nouveau stage de packaging qui vas construire le jar de votre application
 
-`Quels sont les lignes que vous avez rajouté dans votre déclaration de pipeline ?`   
+`Quels sont les lignes que vous avez rajouté dans votre déclaration de pipeline ?`  
 
+**RÉPONSE:** 
+
+* `- package` dans `stage:` 
+* `- ./mvnw $MAVEN_CLI_OPTS compile`
+* `- ./mvnw $MAVEN_CLI_OPTS test`
+ 
+*   ```packaging:
+        image: maven:3.3.9-jdk-8
+        stage: package
+        script:
+            - ./mvnw $MAVEN_CLI_OPTS package
+        artifacts:
+            paths:
+            - target/*.jar```
 #### 3.1.1 Badge
 
 **Gilab** permet d'afficher dans votre readme le status de votre pipeline dynamiquement pour celà : 
