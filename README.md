@@ -359,14 +359,16 @@ validation:
 * `- ./mvnw $MAVEN_CLI_OPTS compile`
 * `- ./mvnw $MAVEN_CLI_OPTS test`
  
-*   ```packaging:
+*   ```
+        packaging:
         image: maven:3.3.9-jdk-8
         stage: package
         script:
             - ./mvnw $MAVEN_CLI_OPTS package
         artifacts:
             paths:
-            - target/*.jar```
+            - target/*.jar
+    ```
 #### 3.1.1 Badge
 
 **Gilab** permet d'afficher dans votre readme le status de votre pipeline dynamiquement pour celà : 
