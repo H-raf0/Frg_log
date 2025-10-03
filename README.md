@@ -378,7 +378,7 @@ rajoutez un bdage indiquant le status de votre pipeline de build dans votre read
 
 ### Réponse
 
-[![coverage report](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/badges/main/coverage.svg)](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/-/commits/main) 
+[Badge](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/-/commits/main) 
 ### 3.2 Couverture de code 
 
 Nous allons ajouter un outil permettant de réaliser des statistiques sur la qualité des tests. Il sagit ici de [jacoco](http://www.eclemma.org/jacoco/) une librairie permettant de réaliser des statistiques sur le taux de couverture de code par les tests unitaires.
