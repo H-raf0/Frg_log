@@ -22,7 +22,7 @@ stages:
 
 #Définition du job de compilation
 compilation:
-  image: maven:3.3.9-jdk-8  # image Docker contenant Maven et JDK8
+  image: maven:3.9.11-jdk-17  # image Docker contenant Maven et JDK8
   stage: build
   script:
     # On compile le projet avec Maven Wrapper
@@ -30,7 +30,7 @@ compilation:
 
 #Définition du job de validation (tests unitaires)
 validation:
-  image: maven:3.3.9-jdk-8
+  image: maven:3.9.11-jdk-17
   stage: test
   script:
     # On exécute les tests
@@ -38,7 +38,7 @@ validation:
 
 #Définition du job de packaging (génération du JAR)
 packaging:
-  image: maven:3.3.9-jdk-8
+  image: maven:3.9.11-jdk-17
   stage: package
   script:
     - ./mvnw $MAVEN_CLI_OPTS package

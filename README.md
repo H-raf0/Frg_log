@@ -369,6 +369,7 @@ validation:
             paths:
             - target/*.jar
     ```
+* et aussi la version du jdk de `maven:3.3.9-jdk-8` à `maven:3.9.11-jdk-17`
 #### 3.1.1 Badge
 
 **Gilab** permet d'afficher dans votre readme le status de votre pipeline dynamiquement pour celà : 
