@@ -4,6 +4,8 @@ Par binôme Nom Prénom:
  * EL ALLALI achraf
  * ABDELLAOUI wiam 
 
+[le pourcentage de couverture de code est: ](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/badges/main/coverage.svg)
+
 # TP 3
 
 Le but de ce TP est de mettre en place un processus d'intégration continue en se basant sur le projet précédent.
@@ -426,7 +428,18 @@ Dans le code suivant on indique au plugin qu'il doit exécuter sa tache **report
 
 **Réponse**
 
-[coverage](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/badges/main/coverage.svg)
+```
+validation:
+  image: maven:3.8.5-openjdk-17
+  stage: test
+  script:
+    # Exécuter les tests avec JaCoCo
+    - ./mvnw $MAVEN_CLI_OPTS clean test
+    # Extraire le pourcentage de couverture depuis le fichier HTML
+    - COVERAGE=$(grep -Po 'Total.*?([0-9]{1,3})%' target/site/jacoco/index.html | grep -Po '[0-9]{1,3}' | tail -1)
+    - echo "Total $COVERAGE%"
+  coverage: '/Total.*?([0-9]{1,3})%/'
+```
 
 
 * Rajoutez en début de votre readme le badge indiquant le pourcentage de couverture de code.
