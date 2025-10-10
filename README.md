@@ -426,7 +426,7 @@ Dans le code suivant on indique au plugin qu'il doit exécuter sa tache **report
 
 **Réponse**
 
-![coverage](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/badges/main/coverage.svg)
+[coverage](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/badges/main/coverage.svg)
 
 
 * Rajoutez en début de votre readme le badge indiquant le pourcentage de couverture de code.
