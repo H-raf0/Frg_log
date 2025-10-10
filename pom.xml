@@ -30,6 +30,11 @@
 		<java.version>17</java.version>
     	<maven.compiler.source>17</maven.compiler.source>
     	<maven.compiler.target>17</maven.compiler.target>
+
+		<!-- SonarCloud configuration -->
+		<sonar.organization>achrafwiamtpforgeisima</sonar.organization>
+		<sonar.projectKey>achraf-wiam-isima-tp-forge-java</sonar.projectKey>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -79,6 +84,8 @@
 
 				</executions>
 			</plugin>
+
+			
 		</plugins>
 	</build>
 
