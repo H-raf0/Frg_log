@@ -34,10 +34,10 @@ validation:
   stage: test
   script:
     # Exécuter les tests avec JaCoCo
-    - ./mvnw $MAVEN_CLI_OPTS clean test jacoco:report
+    - ./mvnw $MAVEN_CLI_OPTS clean test
     # Extraire le pourcentage de couverture depuis le fichier HTML
     - COVERAGE=$(grep -Po 'Total.*?([0-9]{1,3})%' target/site/jacoco/index.html | grep -Po '[0-9]{1,3}' | tail -1)
-    - echo COVERAGE $COVERAGE%
+    - echo "Total $COVERAGE%"
   coverage: '/Total.*?([0-9]{1,3})%/'
 
 
