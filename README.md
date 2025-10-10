@@ -376,7 +376,7 @@ validation:
 * Rendez vous dans la partie [Settings > CI/CD > General pipelines settings](https://docs.gitlab.com/ee/user/project/pipelines/settings.html) de votre projet. A l'aide de la documentation sur les [badges](https://docs.gitlab.com/ee/user/project/pipelines/settings.html#badges) 
 rajoutez un bdage indiquant le status de votre pipeline de build dans votre readme.
 
-### Réponse
+**Réponse**
 
 [Badge](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/-/commits/main) 
 ### 3.2 Couverture de code 
@@ -423,6 +423,11 @@ Dans le code suivant on indique au plugin qu'il doit exécuter sa tache **report
     * Ajoutez à votre `.gitlab-ci.yml` la commande permettant de faire apparaitre le contenu de ce fichier dans la log de votre job.
     
 `Comment affichez vous l'information dans la log du job ?`
+
+**Réponse**
+
+![coverage](https://gitlab.isima.fr/forges_wiam_achraf/frg_log/badges/main/coverage.svg)
+
 
 * Rajoutez en début de votre readme le badge indiquant le pourcentage de couverture de code.
 
