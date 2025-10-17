@@ -24,14 +24,4 @@ class ApplicationTests {
     @Test void km_80()  { assertEquals(46.7, m.calcIndemnite(80), 0.01); }
     @Test void km_81()  { assertEquals(47.25, m.calcIndemnite(81), 0.01); }
 
-	/*
-	@Test
-    public void testCalccalcIndemnite() {
-        // -10, 0, 0.1, 17.123, 39.5, 61, 81, 99
-        Application m = new Application();
-        assertEquals(7.5f, m.calccalcIndemnite(5), 0.01f);   // exemple
-        assertEquals(13.9f, m.calccalcIndemnite(10), 0.01f);
-        assertEquals(17.9f, m.calccalcIndemnite(20), 0.01f);
-    }*/
-
 }
