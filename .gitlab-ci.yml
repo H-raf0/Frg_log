@@ -27,9 +27,9 @@ sonar_scan:
     name: maven:3.8.5-openjdk-17  # or any JDK image you need
     entrypoint: [""]
   script:
-    - ./mvnw sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=b0e14bff482857b5868088bb3c8a5cf697d40987
+    - ./mvnw sonar:sonar -Dsonar.branch.name=main -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=b0e14bff482857b5868088bb3c8a5cf697d40987
   only:
-    - main  # Run this job only on the main branch
+    - main
 
 #Définition du job de compilation
 compilation:
