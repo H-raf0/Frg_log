@@ -14,8 +14,8 @@ public class Application {
 
         // Définir les tranches et tarifs
         int[] tranches = { 9, 39, 59 };           // km limites pour chaque tranche
-        float[] tarifs = { 1.5f, 0.4f, 0.55f };  // tarifs correspondants
-        float tarifDernier = 6.81f;              // tarif pour km restant
+        float[] tarifs = { 1.5f, 0.4f, 0.55f };   // tarifs correspondants
+        float tarifDernier = 6.81f;               // tarif pour km restant
 
         int kmRestant = nbKm;
 
