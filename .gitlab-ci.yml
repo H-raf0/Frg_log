@@ -29,12 +29,7 @@ sonar_scan:
     name: maven:3.8.5-openjdk-17  # or any JDK image you need
     entrypoint: [""]
   script:
-    - ./mvnw $MAVEN_CLI_OPTS sonar:sonar \
-        -Dsonar.host.url=https://sonarcloud.io \
-        -Dsonar.token=$SONAR_TOKEN \
-        -Dsonar.projectKey=$SONAR_PROJECT_KEY \
-        -Dsonar.organization=$SONAR_ORG \
-        -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+    - ./mvnw $MAVEN_CLI_OPTS sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.organization=$SONAR_ORG -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
   only:
     - main 
 
