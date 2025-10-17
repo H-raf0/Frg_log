@@ -30,7 +30,7 @@ public class Application {
 
         // Dernière tranche
         if (kmRestant > 0) {
-            indemnite += (kmRestant/20) * tarifDernier;
+            indemnite += (kmRestant/20.0f) * tarifDernier;
         }
 
         return indemnite;

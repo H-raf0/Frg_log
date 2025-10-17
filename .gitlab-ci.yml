@@ -21,7 +21,6 @@ stages:
   - package # empaquetage
   - sonar   # analyse de code avec SonarCloud
 
-
 sonar_scan:
   stage: sonar
   image:
